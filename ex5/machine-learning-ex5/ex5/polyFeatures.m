@@ -15,8 +15,10 @@ X_poly = zeros(numel(X), p);
 %
 % 
 
-
-
+X_poly = cat(2, X, X.* X);
+for i = 3:p
+  X_poly = cat(2, X_poly, X_poly(:,end) .* X);
+end;  
 
 
 
