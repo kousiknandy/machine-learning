@@ -8,6 +8,7 @@ function word_indices = processEmail(email_contents)
 
 % Load Vocabulary
 vocabList = getVocabList();
+vLsz = size(vocabList,1);
 
 % Init return value
 word_indices = [];
@@ -97,7 +98,12 @@ while ~isempty(email_contents)
     %       str2). It will return 1 only if the two strings are equivalent.
     %
 
-
+    for w = 1:vLsz
+      if strcmp(str, vocabList{w}) == 1
+	word_indices = [word_indices ; w];
+	break;
+      end;
+    end;
 
 
 
