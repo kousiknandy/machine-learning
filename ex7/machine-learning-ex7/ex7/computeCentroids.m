@@ -26,9 +26,13 @@ centroids = zeros(K, n);
 % Note: You can use a for-loop over the centroids to compute this.
 %
 
+Y = sortrows([X idx], n+1);
 
-
-
+for i = 1:K
+  [x,y] = find(Y(:,n+1)==i);
+  centroids(i,:) = mean(Y(x,:))(:,1:n);
+  
+end;
 
 
 

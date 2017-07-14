@@ -22,9 +22,11 @@ idx = zeros(size(X,1), 1);
 %
 
 
-
-
-
+for i = 1:size(X,1)
+  xp = repmat(X(i,:),K,1);
+  C = norm(centroids -  xp, 2, "rows");
+  [_, idx(i)] = min(C');
+end;
 
 
 % =============================================================
