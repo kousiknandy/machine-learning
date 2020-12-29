@@ -1,0 +1,16 @@
+[submodule "CS50/Week 0/0a degrees/degrees"]
+	path = CS50/Week 0/0a degrees/degrees
+	url = https://github.com/me50/kousiknandy.git
+	branch = ai50/projects/2020/x/degrees
+[submodule "CS50/Week 0/0b tic-tac-toe/tictactoe"]
+	path = CS50/Week 0/0b tic-tac-toe/tictactoe
+	url = https://github.com/me50/kousiknandy.git
+	branch = ai50/projects/2020/x/tictactoe
+[submodule "CS50/Week 1/1a knights/knights"]
+	path = CS50/Week 1/1a knights/knights
+	url = https://github.com/me50/kousiknandy.git
+	branch = ai50/projects/2020/x/knights
+[submodule "CS50/Week 1/1b minesweeper/minesweeper"]
+	path = CS50/Week 1/1b minesweeper/minesweeper
+	url = https://github.com/me50/kousiknandy.git
+	branch = ai50/projects/2020/x/minesweeper
